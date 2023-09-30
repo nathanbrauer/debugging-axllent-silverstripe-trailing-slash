@@ -1,0 +1,131 @@
+============================== ATTEMPT 1 ==============================
+string(14) "$ignore_config"
+array(2) {
+  [0]=>
+  string(6) "admin/"
+  [1]=>
+  string(4) "dev/"
+}
+string(13) "$ignore_paths"
+array(2) {
+  [0]=>
+  string(7) "admin\/"
+  [1]=>
+  string(5) "dev\/"
+}
+string(14) "$requested_url"
+string(43) "/preview/b81e99b96f1a024c/9d9ec0cca2b8b1a8/"
+string(40) "Director::baseURL() . $request->getURL()"
+string(1) "/"
+string(41) "preview/b81e99b96f1a024c/9d9ec0cca2b8b1a8"
+string(13) "$expected_url"
+string(43) "/preview/b81e99b96f1a024c/9d9ec0cca2b8b1a8/"
+string(12) "$urlPathInfo"
+array(3) {
+  ["dirname"]=>
+  string(25) "/preview/b81e99b96f1a024c"
+  ["basename"]=>
+  string(16) "9d9ec0cca2b8b1a8"
+  ["filename"]=>
+  string(16) "9d9ec0cca2b8b1a8"
+}
+string(7) "$params"
+array(0) {
+}
+string(14) "$ignore_agents"
+array(1) {
+  [0]=>
+  string(31) "silverstripe/staticpublishqueue"
+}
+string(20) "!Director::is_ajax()"
+bool(true)
+string(138) "!($ignore_agents && in_array(
+                    $request->getHeader('User-Agent'),
+                    $ignore_agents
+                ))"
+bool(true)
+string(33) "$request->getHeader('User-Agent')"
+string(123) "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54"
+string(33) "!isset($urlPathInfo['extension'])"
+bool(true)
+string(14) "empty($params)"
+bool(true)
+string(137) "!preg_match(
+                    '/^' . preg_quote($expected_url, '/') . '(?!\/)/i',
+                    $requested_url
+                )"
+bool(false)
+============================== ATTEMPT 2 ==============================
+string(14) "$ignore_config"
+array(2) {
+  [0]=>
+  string(6) "admin/"
+  [1]=>
+  string(4) "dev/"
+}
+string(13) "$ignore_paths"
+array(2) {
+  [0]=>
+  string(7) "admin\/"
+  [1]=>
+  string(5) "dev\/"
+}
+string(14) "$requested_url"
+string(66) "/press-room/press-releases/title-of-article/"
+string(40) "Director::baseURL() . $request->getURL()"
+string(1) "/"
+string(64) "press-room/press-releases/title-of-article"
+string(13) "$expected_url"
+string(66) "/press-room/press-releases/title-of-article/"
+string(12) "$urlPathInfo"
+array(3) {
+  ["dirname"]=>
+  string(26) "/press-room/press-releases"
+  ["basename"]=>
+  string(38) "title-of-article"
+  ["filename"]=>
+  string(38) "title-of-article"
+}
+string(7) "$params"
+array(0) {
+}
+string(14) "$ignore_agents"
+array(1) {
+  [0]=>
+  string(31) "silverstripe/staticpublishqueue"
+}
+string(20) "!Director::is_ajax()"
+bool(true)
+string(138) "!($ignore_agents && in_array(
+                    $request->getHeader('User-Agent'),
+                    $ignore_agents
+                ))"
+bool(true)
+string(33) "$request->getHeader('User-Agent')"
+string(123) "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54"
+string(33) "!isset($urlPathInfo['extension'])"
+bool(true)
+string(14) "empty($params)"
+bool(true)
+string(137) "!preg_match(
+                    '/^' . preg_quote($expected_url, '/') . '(?!\/)/i',
+                    $requested_url
+                )"
+bool(false)
+string(18) "$response has body"
+bool(true)
+string(23) "$response getStatusCode"
+int(200)
+string(30) "$response getStatusDescription"
+string(2) "OK"
+============================== NOT REDIRECT 2 ==============================
+string(18) "$response has body"
+bool(true)
+string(23) "$response getStatusCode"
+int(200)
+string(30) "$response getStatusDescription"
+string(2) "OK"
+============================== NOT REDIRECT 1 ==============================
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
